@@ -183,9 +183,11 @@
           { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
-
-      //fade in navigation message
-      document.getElementById('psbtc').className = 'visible';
+      
+      window.onload = function() {
+        //fade in navigation message
+        document.getElementById('psbtc').className = 'visible';
+      }
     </script>
 
   </body>

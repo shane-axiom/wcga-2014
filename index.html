@@ -25,7 +25,6 @@
         link.type = 'text/css';
         link.href = 'css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
-        document.getElementById('psbtc').className = 'visible';
       }
     </script>
 
@@ -54,7 +53,7 @@
       .visible {
         visibility: visible;
         opacity: 1;
-        transition: opacity 3s linear;
+        transition: opacity 5s ease;
       }
     </style>
   </head>
@@ -185,6 +184,8 @@
         ]
       });
 
+      //fade in navigation message
+      document.getElementById('psbtc').className = 'visible';
     </script>
 
   </body>

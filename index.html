@@ -25,6 +25,7 @@
         link.type = 'text/css';
         link.href = 'css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
+        document.getElementById('psbtc').className = 'visible';
       }
     </script>
 
@@ -44,6 +45,17 @@
         margin: 1%;
         padding: 10px 0;
       }
+
+      .invisible {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 3s linear;
+      }
     </style>
   </head>
 
@@ -58,6 +70,7 @@
           <div>
             <a target="_blank" href="http://www.axiomdatascience.com"><img alt="Axiom Logo" src="images/axiom_logo.png" />
           </a></div>
+          <div id="psbtc" class="invisible">Press space bar to continue...</div>
         </section>
         <section>
           <a target="_blank" href="http://data.cencoos.org/#module-metadata/68261bfc-4501-11e4-a184-00219bfe5678/a703c4b9-c491-43d9-aed4-b88bd3b435f2">
